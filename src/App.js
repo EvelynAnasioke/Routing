@@ -1,27 +1,26 @@
-import './App.css';
-import {Routes, Route} from 'react-router-dom';
-import Home from './components/Home';
-import Aboutus from './components/Aboutus';
-import Books from './components/Books';
-import Services from './components/Services';
-import Testimonies from './components/Testimonies';
-import Navbar from './components/Navbar';
-
+import "./App.css";
+import { Routes, Route } from "react-router-dom";
+import Home from "./components/Home";
+import Tower from "./components/Tower";
+import Hotel from "./components/Hotel";
+import Triomphe from "./components/Triomphe";
+import Grande from "./components/Grande";
+import Navbar from "./components/Navbar";
 
 function App() {
   return (
     <>
-  <Navbar/>  
-   
-    <Routes>
-      <Route path="/" element={<Home />} />
-      <Route path="/aboutus" element={<Aboutus />} />
-      <Route path="/books" element={<Books />} />
-      <Route path="/services" element={<Services />} />
-      <Route path="/testimonies" element={<Testimonies />} />
-    </Routes>
+      <Navbar />
+
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/tower" element={<Tower />} />
+        <Route path="/hotel" element={<Hotel />} />
+        <Route path="/triomphe" element={<Triomphe />} />
+        <Route path="/grande" element={<Grande />} />
+      </Routes>
     </>
-  )
+  );
 }
 
 export default App;
